@@ -1,103 +1,94 @@
-import Image from "next/image";
+import { SparklesIcon, ChartBarIcon, Cog6ToothIcon, ShieldCheckIcon } from '@heroicons/react/24/outline';
+
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm/6 text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-[family-name:var(--font-geist-mono)] font-semibold">
-              app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
+    <main className="min-h-screen bg-white text-gray-800 px-6 py-12 md:px-12">
+      <section className="max-w-4xl mx-auto text-center">
+        <h1 className="text-4xl md:text-5xl font-bold mb-4">Vered Ben-Dor</h1>
+        <p className="text-lg md:text-xl text-gray-600 mb-8">
+          Software Engineer · Data & AI Systems · Climate Contributor
+        </p>
+        <p className="text-md md:text-lg max-w-2xl mx-auto">
+          I build systems that power smarter, more ethical decisions — combining 20+ years of software engineering with a
+          focus on data quality, automation, and AI. Recently, I've designed pipelines for anomaly detection,
+          AI-enhanced customer support, and recommendation engines — all with scale and impact in mind.
+        </p>
+      </section>
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
-        </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
+      <section className="max-w-3xl mx-auto mt-20" id="about">
+        <h2 className="text-2xl font-semibold mb-4">About Me</h2>
+        <p className="text-gray-700 mb-4">
+          I'm a backend engineer at heart — designing data pipelines and integrating AI systems that support real-time insights,
+          automated workflows, and better decisions. From building a SQL-based data quality framework to launching full-stack
+          anomaly detection systems, I specialize in making complex data more usable, scalable, and trustworthy.
+        </p>
+        <p className="text-gray-700">
+          Now, I’m focusing my skills in the climate space — helping mission-driven teams build resilient, transparent data systems.
+        </p>
+      </section>
+
+      <section className="max-w-5xl mx-auto mt-24" id="projects">
+        <h2 className="text-2xl font-semibold mb-8 text-center">Projects</h2>
+        <div className="grid gap-8 md:grid-cols-2">
+          {/* Project 1 */}
+          <div className="bg-gray-100 p-6 rounded-lg shadow hover:shadow-lg transition-shadow">
+            <div className="flex items-center mb-2">
+              <SparklesIcon className="h-6 w-6 text-green-600 mr-2" />
+              <h3 className="text-xl font-semibold">AI-Powered Support Assistant (RAG)</h3>
+            </div>
+            <p className="text-gray-700 mb-2">
+              Built a support assistant using OpenAI + ChromaDB to generate contextual replies from a knowledge base.
+              Integrated with Zoho Desk and automated replies with PII masking.
+            </p>
+            <p className="text-sm text-gray-500">FastAPI · OpenAI · ChromaDB · Docker · Presidio</p>
+          </div>
+
+
+          {/* Project 2 */}
+          <div className="bg-gray-100 p-6 rounded-lg shadow hover:shadow-lg transition-shadow">
+            <div className="flex items-center mb-2">
+              <ChartBarIcon className="h-6 w-6 text-green-600 mr-2" />
+              <h3 className="text-xl font-semibold">Time-Series Anomaly Detection</h3>
+            </div>
+            <p className="text-gray-700 mb-2">
+              Designed a complete pipeline to collect, transform, and detect anomalies in time-series data using ML models.
+              Built a Streamlit UI and automated it with Airflow.
+            </p>
+            <p className="text-sm text-gray-500">
+              Python · Streamlit · Airflow · PostgreSQL · Supabase · Isolation Forest
+            </p>
+          </div>
+
+
+          {/* Project 3 */}
+          <div className="bg-gray-100 p-6 rounded-lg shadow hover:shadow-lg transition-shadow">
+            <div className="flex items-center mb-2">
+              <Cog6ToothIcon className="h-6 w-6 text-green-600 mr-2" />
+              <h3 className="text-xl font-semibold">AI Recommendation Engine</h3>
+            </div>
+            <p className="text-gray-700 mb-2">
+              Built ingestion and transformation pipelines to power personalized content recommendations using AI-driven insights.
+            </p>
+            <p className="text-sm text-gray-500">Python · BigQuery · Machine Learning · Cloud Pipelines</p>
+          </div>
+
+          {/* Project 4 */}
+          <div className="bg-gray-100 p-6 rounded-lg shadow hover:shadow-lg transition-shadow">
+            <div className="flex items-center mb-2">
+              <ShieldCheckIcon className="h-6 w-6 text-green-600 mr-2" />
+              <h3 className="text-xl font-semibold">SQL-Based Data Quality Framework</h3>
+            </div>
+            <p className="text-gray-700 mb-2">
+              Architected and implemented a declarative SQL-based audit system to detect data mismatches across pipelines at scale.
+            </p>
+            <p className="text-sm text-gray-500">SQL · BigQuery · Data Quality · Governance · Automation</p>
+          </div>
+          </div>
+      </section>
+
+
+    </main>
   );
 }
+
