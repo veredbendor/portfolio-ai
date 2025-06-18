@@ -21,7 +21,7 @@ export default function Home() {
       <section className="max-w-4xl mx-auto text-center border-b border-gray-200 pb-5 mb-5">
         <h1 className="text-4xl md:text-5xl font-bold mb-4 text-gray-900">Vered Ben-Dor</h1>
         <p className="text-lg md:text-xl text-gray-600 mb-6">
-          AI Integration • Business Automation • Full-Stack Software Development
+          AI Integration • Business Automation • Full-Stack Software Development • Climate Contributor
         </p>
         <p className="text-md md:text-lg max-w-3xl mx-auto text-gray-700 mb-6">
           I integrate AI into business operations to automate workflows, reduce costs, and accelerate growth. Specializing in seamless implementations that transform manual processes into intelligent, scalable systems—delivering measurable ROI within months, not years.
