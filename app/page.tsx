@@ -60,33 +60,6 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="mt-8">
-          <h3 className="text-2xl font-semibold mb-3 text-gray-800">Recommendations</h3>
-          
-          <div className="space-y-4">
-            <blockquote className="bg-gray-50 p-6 rounded-lg border-l-4 border-blue-500">
-              <p className="text-gray-700 italic mb-3">
-                "Working with Vered has been transformational for our operations. Her technical solutions have made my business life significantly easier, and the value she delivers is so substantial. When you find a consultant who consistently delivers this level of impact, you want to keep them involved long-term."
-              </p>
-              <cite className="text-sm text-gray-600 font-medium">— Glenn, Business Owner</cite>
-            </blockquote>
-            
-            <blockquote className="bg-gray-50 p-6 rounded-lg border-l-4 border-green-500">
-              <p className="text-gray-700 italic mb-3">
-                "We brought Vered in to solve a critical integration challenge that was blocking our operations. Her technical intuition identified the optimal solution architecture, delivering a clean, complete implementation that saved us significant time and resources. When you need someone to tackle complex technical problems and deliver business results, she's the consultant to call."
-              </p>
-              <cite className="text-sm text-gray-600 font-medium">— Marcel, Senior Technology Lead</cite>
-            </blockquote>
-            
-            <blockquote className="bg-gray-50 p-6 rounded-lg border-l-4 border-purple-500">
-              <p className="text-gray-700 italic mb-3">
-                "Vered transformed how we approached our data challenges by bringing innovative technical solutions we hadn't considered internally. Her ability to quickly understand our business needs and translate them into effective technical implementations made a real impact on our operations. Smart, results-driven, and delivers solutions that move the business forward."
-              </p>
-              <cite className="text-sm text-gray-600 font-medium">— Aaron, Director of Business Operations</cite>
-            </blockquote>
-          </div>
-        </div>
-
       </section>
 
       <section className="max-w-5xl mx-auto mt-24" id="projects">
@@ -143,6 +116,33 @@ export default function Home() {
             </p>
             <p className="text-sm text-gray-500">SQL · BigQuery · Data Quality · Governance · Automation</p>
           </div>
+        </div>
+      </section>
+
+      <section className="max-w-4xl mx-auto mt-24">
+        <h2 className="text-2xl font-semibold mb-8 text-center text-gray-800">Recommendations</h2>
+        
+        <div className="space-y-4">
+          <blockquote className="bg-gray-50 p-6 rounded-lg border-l-4 border-blue-500">
+            <p className="text-gray-700 italic mb-3">
+              "Working with Vered has been transformational for our operations. Her technical solutions have made my business life significantly easier, and the value she delivers is so substantial. When you find a consultant who consistently delivers this level of impact, you want to keep them involved long-term."
+            </p>
+            <cite className="text-sm text-gray-600 font-medium">— Glenn, Business Owner</cite>
+          </blockquote>
+          
+          <blockquote className="bg-gray-50 p-6 rounded-lg border-l-4 border-green-500">
+            <p className="text-gray-700 italic mb-3">
+              "We brought Vered in to solve a critical integration challenge that was blocking our operations. Her technical intuition identified the optimal solution architecture, delivering a clean, complete implementation that saved us significant time and resources. When you need someone to tackle complex technical problems and deliver business results, she's the consultant to call."
+            </p>
+            <cite className="text-sm text-gray-600 font-medium">— Marcel, Senior Technology Lead</cite>
+          </blockquote>
+          
+          <blockquote className="bg-gray-50 p-6 rounded-lg border-l-4 border-purple-500">
+            <p className="text-gray-700 italic mb-3">
+              "Vered transformed how we approached our data challenges by bringing innovative technical solutions we hadn't considered internally. Her ability to quickly understand our business needs and translate them into effective technical implementations made a real impact on our operations. Smart, results-driven, and delivers solutions that move the business forward."
+            </p>
+            <cite className="text-sm text-gray-600 font-medium">— Aaron, Director of Business Operations</cite>
+          </blockquote>
         </div>
       </section>
 
