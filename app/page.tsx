@@ -1,29 +1,24 @@
 "use client";
 
 import { SparklesIcon, ChartBarIcon, Cog6ToothIcon, ShieldCheckIcon } from '@heroicons/react/24/outline';
-import { useEffect } from 'react';
 
 export default function Home() {
-  useEffect(() => {
-    const handleEscKey = (event: KeyboardEvent) => {
-      if (event.key === 'Escape') {
-        const modal = document.getElementById('contactModal');
-        if (modal) modal.style.display = 'none';
-      }
-    };
-
-    document.addEventListener('keydown', handleEscKey);
-    return () => document.removeEventListener('keydown', handleEscKey);
-  }, []);
-
   return (
     <main className="min-h-screen bg-white text-gray-800 px-6 py-6 md:px-12">
       <section className="max-w-4xl mx-auto text-center border-b border-gray-200 pb-5 mb-5">
         <h1 className="text-4xl md:text-5xl font-bold mb-4 text-gray-900">Vered Ben-Dor</h1>
-        <p className="text-lg md:text-xl text-gray-600 mb-6">
+        <p className="text-lg md:text-xl text-gray-600 mb-4">
           AI Integration • Business Automation • Full-Stack Software Development • Climate Contributor
         </p>
-        <p className="text-md md:text-lg max-w-3xl mx-auto text-gray-700 mb-6">
+        
+        {/* Resume-style contact header */}
+        <div className="text-md md:text-lg text-gray-700 mb-6">
+          North Bay, CA • 707-287-2312 • 
+          <a href="mailto:bendor.vered@gmail.com" className="hover:text-blue-600 transition-colors"> bendor.vered@gmail.com</a> • 
+          <a href="https://linkedin.com/in/vered-ben-dor" target="_blank" rel="noopener noreferrer" className="hover:text-blue-600 transition-colors">linkedin.com/in/vered-ben-dor</a>
+        </div>
+        
+        <p className="text-md md:text-lg max-w-3xl mx-auto text-gray-700">
           I integrate AI into business operations to automate workflows, reduce costs, and accelerate growth. Specializing in seamless implementations that transform manual processes into intelligent, scalable systems—delivering all with scale and impact in mind.
         </p>
       </section>
@@ -92,18 +87,6 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="text-center mt-10">
-          <button 
-            onClick={() => {
-              const modal = document.getElementById('contactModal');
-              if (modal) modal.style.display = 'block';
-            }}
-            className="bg-gradient-to-br from-gray-200 to-gray-300 border border-gray-400 text-gray-700 px-7 py-3.5 text-base font-medium rounded-lg cursor-pointer transition-all duration-300 shadow-sm hover:bg-gradient-to-br hover:from-gray-300 hover:to-gray-400 hover:-translate-y-0.5 hover:shadow-md"
-          >
-            Discuss Your Automation Needs
-          </button>
-        </div>
-
       </section>
 
       <section className="max-w-5xl mx-auto mt-24" id="projects">
@@ -122,7 +105,6 @@ export default function Home() {
             <p className="text-sm text-gray-500">FastAPI · OpenAI · ChromaDB · Docker · Presidio</p>
           </div>
 
-
           {/* Project 2 */}
           <div className="bg-gray-100 p-6 rounded-lg shadow hover:shadow-lg transition-shadow">
             <div className="flex items-center mb-2">
@@ -137,7 +119,6 @@ export default function Home() {
               Python · Streamlit · Airflow · PostgreSQL · Supabase · Isolation Forest
             </p>
           </div>
-
 
           {/* Project 3 */}
           <div className="bg-gray-100 p-6 rounded-lg shadow hover:shadow-lg transition-shadow">
@@ -162,61 +143,9 @@ export default function Home() {
             </p>
             <p className="text-sm text-gray-500">SQL · BigQuery · Data Quality · Governance · Automation</p>
           </div>
-                      </div>
-        </section>
-
-      
-      {/* Contact Modal */}
-      <div 
-        id="contactModal" 
-        className="hidden fixed inset-0 z-50 bg-black bg-opacity-50" 
-        style={{backdropFilter: 'blur(4px)'}}
-        onClick={(e) => {
-          if (e.target === e.currentTarget) {
-            const modal = document.getElementById('contactModal');
-            if (modal) modal.style.display = 'none';
-          }
-        }}
-      >
-        <div className="bg-white mx-auto mt-20 p-10 rounded-xl w-11/12 max-w-lg relative shadow-2xl transition-all duration-300 ease-out">
-          <button 
-            onClick={() => {
-              const modal = document.getElementById('contactModal');
-              if (modal) modal.style.display = 'none';
-            }}
-            className="absolute right-5 top-5 text-2xl font-bold text-gray-400 hover:text-gray-700 transition-colors duration-300"
-          >
-            ×
-          </button>
-          
-          <h3 className="text-2xl font-semibold text-gray-800 text-center mb-3">Let's Connect</h3>
-          <p className="text-center text-gray-600 mb-8">Ready to explore AI automation for your business?</p>
-          
-          <div className="space-y-5">
-            <div className="flex items-center p-4 bg-gray-50 rounded-lg border border-gray-200 hover:bg-gray-100 hover:border-gray-300 transition-all duration-300">
-              <div className="text-2xl mr-4">📧</div>
-              <div className="flex-1">
-                <div className="text-sm text-gray-600 mb-1">Email</div>
-                <a href="mailto:bendor.vered@gmail.com" className="text-gray-800 font-medium text-lg hover:text-gray-900 hover:underline">
-                  bendor.vered@gmail.com
-                </a>
-              </div>
-            </div>
-            
-            <div className="flex items-center p-4 bg-gray-50 rounded-lg border border-gray-200 hover:bg-gray-100 hover:border-gray-300 transition-all duration-300">
-              <div className="text-2xl mr-4">📞</div>
-              <div className="flex-1">
-                <div className="text-sm text-gray-600 mb-1">Phone</div>
-                <a href="tel:7072872312" className="text-gray-800 font-medium text-lg hover:text-gray-900 hover:underline">
-                  707 287 2312
-                </a>
-              </div>
-            </div>
-          </div>
         </div>
-      </div>
+      </section>
 
     </main>
   );
 }
-
