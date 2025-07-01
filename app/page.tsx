@@ -19,7 +19,7 @@ export default function Home() {
         </div>
         
         <p className="text-md md:text-lg max-w-3xl mx-auto text-gray-700">
-          I integrate AI into business operations to automate workflows, reduce costs, and accelerate growth. Specializing in seamless implementations that transform manual processes into intelligent, scalable systems—delivering all with scale and impact in mind.
+          I integrate AI into business operations to automate workflows, reduce costs, and accelerate growth. I specialize in implementations that transform manual processes into intelligent, scalable systems designed for maximum impact and efficiency.
         </p>
       </section>
 
