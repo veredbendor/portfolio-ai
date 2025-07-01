@@ -18,8 +18,8 @@ export default function Home() {
           <a href="https://linkedin.com/in/vered-ben-dor" target="_blank" rel="noopener noreferrer" className="hover:text-blue-600 transition-colors">linkedin.com/in/vered-ben-dor</a>
         </div>
         
-        <p className="text-md md:text-lg max-w-3xl mx-auto text-gray-700">
-          I integrate AI into business operations to automate workflows, reduce costs, and accelerate growth. I specialize in implementations that transform manual processes into intelligent, scalable systems designed for maximum impact and efficiency.
+        <p className="text-lg md:text-xl max-w-3xl mx-auto text-gray-700 font-medium leading-relaxed">
+          I integrate <span className="text-blue-600 font-semibold">AI into business operations</span> to automate workflows, reduce costs, and accelerate growth. I specialize in seamless implementations that transform manual processes into intelligent, scalable systems designed for <span className="text-blue-600 font-semibold">maximum impact and efficiency</span>.
         </p>
       </section>
 
