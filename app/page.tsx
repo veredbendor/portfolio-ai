@@ -13,9 +13,9 @@ export default function Home() {
         
         {/* Resume-style contact header */}
         <div className="text-md md:text-lg text-gray-700 mb-6">
-          North Bay, CA • 707-287-2312 • 
+          707-287-2312 • 
           <a href="mailto:bendor.vered@gmail.com" className="hover:text-blue-600 transition-colors"> bendor.vered@gmail.com</a> • 
-          <a href="https://linkedin.com/in/vered-ben-dor" target="_blank" rel="noopener noreferrer" className="hover:text-blue-600 transition-colors">linkedin.com/in/vered-ben-dor</a>
+          <a href="https://linkedin.com/in/vered-ben-dor" target="_blank" rel="noopener noreferrer" className="hover:text-blue-600 transition-colors"> linkedin.com/in/vered-ben-dor</a>
         </div>
         
         <p className="text-lg md:text-xl max-w-3xl mx-auto text-gray-700 font-medium leading-relaxed">
