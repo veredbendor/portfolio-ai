@@ -19,7 +19,8 @@ export default function Home() {
         </div>
         
         <p className="text-lg md:text-xl max-w-3xl mx-auto text-gray-700 font-medium leading-relaxed">
-          I integrate <span className="text-blue-600 font-semibold">AI into business operations</span> to automate workflows, reduce costs, and accelerate growth. I specialize in seamless implementations that transform manual processes into intelligent, scalable systems designed for <span className="text-blue-600 font-semibold">maximum impact and efficiency</span>.
+          I integrate AI into business operations to automate workflows, reduce costs, and accelerate growth. I specialize in seamless implementations that transform manual processes into intelligent, scalable systems designed for 
+            maximum impact and efficiency
         </p>
       </section>
 
